@@ -17,9 +17,9 @@
     }
   }
   @include tablet {
-    flex-basis: calc((100% - 15px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
-  @include tablet {
+  @include desktop {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
