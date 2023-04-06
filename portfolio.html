@@ -16,8 +16,203 @@
 </head>
 <body>
   <main>
-    <section>
-      <div class="container"></div>
+    <section class="section portfolio">
+      <div class="container">
+        <h1 class="visually-hidden">Our work</h1>
+        <ul class="button-set portfolio__button-set">
+          <li class="button-set__item"><button data-work-type="" class="button-set__button active" type="button">All</button>
+          </li>
+          <li class="button-set__item"><button data-work-type="website" class="button-set__button"
+              type="button">Web-sites</button></li>
+          <li class="button-set__item"><button data-work-type="app" class="button-set__button" type="button">Apps</button>
+          </li>
+          <li class="button-set__item"><button data-work-type="design" class="button-set__button" type="button">Design</button>
+          </li>
+          <li class="button-set__item"><button data-work-type="marketing" class="button-set__button"
+              type="button">Marketing</button></li>
+        </ul>
+        <ul class="portfolio__list">
+          <li data-work-type="website" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/website-desktop@1x.jpg 1x, ./images/website-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/website-tablet@1x.jpg 1x, ./images/website-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./images/website-mobile@1x.jpg 1x, ./images/website-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/website-mobile@1x.jpg" alt="Laptop" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage
+                and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Technoduck</h2>
+                <p class="portfolio__text">Website</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="design" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/basketball-desktop@1x.jpg 1x, ./images/basketball-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/basketball-tablet@1x.jpg 1x, ./images/basketball-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./images/basketball-mobile@1x.jpg 1x, ./images/basketball-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/basketball-mobile@1x.jpg" alt="Basketball" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Poster New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Design</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="app" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/fish-desktop@1x.jpg 1x, ./images/fish-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./images/fish-tablet@1x.jpg 1x, ./images/fish-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="./images/fish-mobile@1x.jpg 1x, ./images/fish-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/fish-mobile@1x.jpg" alt="Fish" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Seafood Restaurant</h2>
+                <p class="portfolio__text">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="marketing" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/headphone-desktop@1x.jpg 1x, ./images/headphone-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/headphone-tablet@1x.jpg 1x, ./images/headphone-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./images/headphone-mobile@1x.jpg 1x, ./images/headphone-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/headphone-mobile@1x.jpg" alt="Headphone" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Project Prime</h2>
+                <p class="portfolio__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="app" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/boxes-desktop@1x.jpg 1x, ./images/boxes-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./images/boxes-tablet@1x.jpg 1x, ./images/boxes-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="./images/boxes-mobile@1x.jpg 1x, ./images/boxes-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/boxes-mobile@1x.jpg" alt="Two boxes" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Project Boxes</h2>
+                <p class="portfolio__text">Apps</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="website" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/pc-desktop@1x.jpg 1x, ./images/pc-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./images/pc-tablet@1x.jpg 1x, ./images/pc-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="./images/pc-mobile@1x.jpg 1x, ./images/pc-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/pc-mobile@1x.jpg" alt="PC" width="450"
+                    height="294" loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Inspiration has no Borders</h2>
+                <p class="portfolio__text">Website</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="design" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/magazine-desktop@1x.jpg 1x, ./images/magazine-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/magazine-tablet@1x.jpg 1x, ./images/magazine-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./images/magazine-mobile@1x.jpg 1x, ./images/magazine-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/magazine-mobile@1x.jpg" alt="Magazine" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Limited Edition</h2>
+                <p class="portfolio__text">Design</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="marketing" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/tag-desktop@1x.jpg 1x, ./images/tag-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./images/tag-tablet@1x.jpg 1x, ./images/tag-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="./images/tag-mobile@1x.jpg 1x, ./images/tag-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/tag-mobile@1x.jpg" alt="Tag" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Project LAB</h2>
+                <p class="portfolio__text">Marketing</p>
+              </div>
+            </a>
+          </li>
+          <li data-work-type="app" class="portfolio__item">
+            <a class="portfolio__link" href="#">
+              <div class="portfolio__box">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/laptop-desktop@1x.jpg 1x, ./images/laptop-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./images/laptop-tablet@1x.jpg 1x, ./images/laptop-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="./images/laptop-mobile@1x.jpg 1x, ./images/laptop-mobile@2x.jpg 2x">
+                  <img class="portfolio__image" src="./images/laptop-mobile@1x.jpg" alt="Laptop" width="450" height="294"
+                    loading="lazy">
+                </picture>
+                <p class="portfolio__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              </div>
+              <div class="portfolio__content">
+                <h2 class="portfolio__name">Growing Business</h2>
+                <p class="portfolio__text">Apps</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 </body>
