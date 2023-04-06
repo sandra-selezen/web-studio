@@ -74,6 +74,11 @@ body {
   outline: none;
 }
 
+h2, h3 {
+  text-align: center;
+  color: #222831;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;
@@ -399,4 +404,33 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: #222831;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.about__box {
+  position: relative;
+}
+
+.about__text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.4);
 }/*# sourceMappingURL=main.css.map */
