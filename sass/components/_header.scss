@@ -1,0 +1,83 @@
+.header {
+  background-color: $mainWhiteColor;
+  border-bottom: 1px solid $mainTextColor;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts {
+  display: block;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.contacts__item {
+  align-items: center;
+  &:first-child {
+    margin-bottom: 10px;
+  }
+  @include desktop {
+    &:first-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.contacts__link {
+  display: flex;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  fill: $mainTextColor;
+  transition: color $duration $timingFunction,
+    fill $duration $timingFunction;
+  
+  &:hover,
+  &:focus {
+    fill: $secondaryAccentColor;
+    color: $secondaryAccentColor;
+  }
+  
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__icon-mail {
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+
+  @include desktop {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icon-phone {
+  margin-right: 8px;
+  width: 10px;
+  height: 14px;
+
+  @include desktop {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
+}
