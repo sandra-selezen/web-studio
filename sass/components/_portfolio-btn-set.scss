@@ -1,0 +1,38 @@
+.button-set {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.button-set__button {
+  @extend %button;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  transition: background-color $duration $timingFunction,
+              box-shadow $duration $timingFunction;
+  
+  &:hover,
+  &:focus {
+    background-color: $secondaryAccentColor;
+    box-shadow: $buttonSetShadow;
+  }
+}
+
+.button-set__button.active {
+  background-color: $secondaryAccentColor;
+  box-shadow: $buttonSetShadow;
+}
