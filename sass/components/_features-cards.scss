@@ -1,0 +1,44 @@
+.features {
+  background-color: $mainWhiteColor;
+}
+
+.features__list {
+  @include tablet {
+    display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+}
+
+.features__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @include tablet {
+    flex-basis: calc((100% - 15px) / 2);
+  }
+  @include tablet {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.features__box {
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: $secondaryWhiteColor;
+}
+
+.features__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $mainDarkColor;
+}
