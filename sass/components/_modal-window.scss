@@ -1,0 +1,249 @@
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop;
+  opacity: 1;
+  overflow-y: scroll;
+  transition: opacity $duration $timingFunction;
+}
+
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  width: 100%;
+  padding: 40px;
+  background-color: $mainWhiteColor;
+  box-shadow: $buttonSetShadow;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $duration $timingFunction;
+
+  @include desktop {
+    max-width: 528px;
+    width: 100%;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal__form {
+  max-width: 370px;
+
+  @include desktop {
+    max-width: 448px;
+  }
+}
+
+.form {}
+
+.form__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: $mainTitleColor;
+
+  @include desktop {
+    line-height: 1.15;
+  }
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__label {
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form__input {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  border: 1px solid $mainTextColor;
+  border-radius: 5px;
+  transition: border-color $duration $timingFunction;
+
+  &:focus-within {
+    border-color: $secondaryAccentColor;
+  }
+}
+
+.form__icon {
+position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: $mainTextColor;
+  transition: $duration $timingFunction;
+}
+
+.form__field:focus-within .form__icon {
+  fill: $secondaryAccentColor;
+}
+
+.form__comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form__textarea {
+height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid $mainTextColor;
+  border-radius: 5px;
+  transition: border-color $duration $timingFunction;
+
+  &:focus-within {
+    border-color: $secondaryAccentColor;
+  }
+}
+
+.form__checkbox {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__policy {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.form__icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $mainTextColor;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border-color $duration $timingFunction,
+              background-image $duration $timingFunction,
+              background-color $duration $timingFunction;
+}
+
+.form__icon-checkbox--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__icon-checkbox--hidden:checked+.form__icon-checkbox {
+  border-color: $secondaryAccentColor;
+  background-color: $secondaryAccentColor;
+  background-image: url(..//../images/check.svg);
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+}
+
+.form__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: $secondaryAccentColor;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $secondaryAccentColor;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform $duration $timingFunction;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+.form__button-submit {
+  @extend %button;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 52px;
+  padding-right: 52px;
+  transition: background-color $duration $timingFunction,
+              box-shadow $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryAccentColor;
+    box-shadow: $buttonSetShadow;
+  }
+}
+
+.form__button-close {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+
+  fill: $mainTextColor;
+  border-radius: 50%;
+  background: $mainWhiteColor;
+  border: 1px solid $mainTextColor;
+  cursor: pointer;
+
+  transition: fill $duration $timingFunction;
+              border-color: $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    fill: $secondaryAccentColor;
+    border-color: $secondaryAccentColor;
+  }
+}
