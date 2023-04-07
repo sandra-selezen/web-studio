@@ -1,2 +1,4 @@
 # web-studio
-WebStudio
+
+Responsive WebStudio Website Using HTML, CSS And JavaScript
+![preview] (./images/preview.png)
