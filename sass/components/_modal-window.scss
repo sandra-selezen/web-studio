@@ -11,10 +11,10 @@
   transition: opacity $duration $timingFunction;
 }
 
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 body.modal-open {
   overflow: hidden;
@@ -50,8 +50,6 @@ body.modal-open {
     max-width: 448px;
   }
 }
-
-.form {}
 
 .form__title {
   margin-bottom: 12px;
