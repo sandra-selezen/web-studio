@@ -60,7 +60,7 @@ body {
   color: #757882;
 }
 
-.hero__button {
+.cta-form__button, .hero__button {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
@@ -613,6 +613,199 @@ h2, h3 {
 .clients__link:hover, .clients__link:focus {
   fill: #774181;
   border-color: #774181;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #222831;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tablet__wrapper {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+.footer__contact {
+  margin-top: 28px;
+}
+
+.address-wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-wrapper {
+    margin-right: 80px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__address {
+  color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__address:hover, .contact__address:focus {
+  color: #a070a1;
+}
+
+.contact__mail,
+.contact__tel {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__mail:hover, .contact__mail:focus,
+.contact__tel:hover,
+.contact__tel:focus {
+  color: #a070a1;
+}
+
+.cta__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .cta__title {
+    text-align: left;
+  }
+}
+
+.cta-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .cta-form {
+    width: 570px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.cta-form__input {
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  border-radius: 5px;
+  background-color: inherit;
+  border: 1px solid #757882;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .cta-form__input {
+    margin-right: 12px;
+  }
+}
+
+.cta-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  fill: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cta-form__button:hover, .cta-form__button:focus {
+  background-color: #774181;
+  -webkit-box-shadow: 0px 0px 20px 30px rgba(114, 64, 96, 0.2);
+          box-shadow: 0px 0px 20px 30px rgba(114, 64, 96, 0.2);
+}
+
+.cta-form__icon {
+  margin-left: 10px;
 }
 
 .button-set {

@@ -1,0 +1,135 @@
+.footer {
+  padding: 60px 0;
+  background-color: $mainDarkColor;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.tablet__wrapper {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+.footer__contact {
+  margin-top: 28px;
+}
+
+.address-wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+  @include desktop {
+    margin-right: 80px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content: center;
+}
+
+.contact__address {
+  color: $mainWhiteColor;
+  transition: color $duration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $mainAccentColor;
+  }
+}
+
+.contact__mail,
+.contact__tel {
+  transition: color $duration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $mainAccentColor;
+  }
+}
+
+.cta__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: $mainWhiteColor;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  @include desktop {
+    width: 570px;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
+.cta-form__input {
+  max-width: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  border-radius: 5px;
+  background-color: inherit;
+  border: 1px solid $mainTextColor;
+  color: $mainWhiteColor;
+  @include desktop {
+    margin-right: 12px;
+  }
+}
+
+.cta-form__button {
+  @extend %button;
+  display: flex;
+  // width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  fill: $mainWhiteColor;
+  transition: background-color $duration $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: $secondaryAccentColor;
+    box-shadow: $buttonBoxShadow;
+  }
+}
+
+.cta-form__icon {
+  margin-left: 10px;
+}
