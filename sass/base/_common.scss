@@ -22,5 +22,17 @@ body {
 }
 
 h2, h3 {
-  color: $mainDarkColor;
+  color: $mainTitleColor;
+}
+
+.section__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }

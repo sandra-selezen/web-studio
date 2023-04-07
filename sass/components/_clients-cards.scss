@@ -1,0 +1,35 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  30px;
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @include tablet {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border: 1px solid $mainTextColor;
+  border-radius: 4px;
+  fill: $mainTextColor;
+  transition: fill $duration $timingFunction,
+              border $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    fill: $secondaryAccentColor;
+    border-color: $secondaryAccentColor;
+  }
+}

@@ -1,0 +1,64 @@
+.team {
+  background-color: $secondaryWhiteColor;
+}
+
+.team__list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  @include desktop {
+    column-gap: 30px;
+  }
+}
+
+.team__item {
+  padding-bottom: 24px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $mainWhiteColor;
+  box-shadow: $buttonSetShadow;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+  }
+}
+
+.team__image {
+  @include tablet {
+    width: 354px;
+    height: 374px;
+  }
+  
+  @include desktop {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.team__subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

@@ -15,24 +15,32 @@
 }
 
 .button-set__button {
-  @extend %button;
-  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   padding: 6px 22px;
+  color: $mainTitleColor;
+  border-radius: 5px;
+  border: none;
+  outline: none;
   transition: background-color $duration $timingFunction,
               box-shadow $duration $timingFunction;
+              color: $duration $timingFunction;
   
   &:hover,
-  &:focus {
+  &:focus,
+  &.active {
     background-color: $secondaryAccentColor;
     box-shadow: $buttonSetShadow;
+    color: $mainWhiteColor;
   }
 }
 
-.button-set__button.active {
-  background-color: $secondaryAccentColor;
-  box-shadow: $buttonSetShadow;
-}
+// .button-set__button.active {
+//   background-color: $secondaryAccentColor;
+//   box-shadow: $buttonSetShadow;
+//   color: $mainWhiteColor;
+// }
