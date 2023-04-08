@@ -9,6 +9,13 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+    .header__nav,
+    .header__contacts {
+      display: none;
+    }
+}
+
 .contacts {
   display: block;
   @include desktop {

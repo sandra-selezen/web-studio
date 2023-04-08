@@ -1,5 +1,9 @@
 .about {
   background-color: $mainWhiteColor;
+
+  @media screen and (max-width: 1190px) {
+    display: none;
+  }
 }
 
 .about__list {
