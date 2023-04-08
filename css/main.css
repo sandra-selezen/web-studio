@@ -125,7 +125,7 @@ h2, h3 {
 }
 
 .section--no-padding {
-  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .header__logo {
@@ -459,6 +459,9 @@ h2, h3 {
 }
 
 .about__text {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
   width: 100%;
@@ -467,7 +470,7 @@ h2, h3 {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.4);
+  background-color: rgba(160, 112, 161, 0.8);
 }
 
 .team {

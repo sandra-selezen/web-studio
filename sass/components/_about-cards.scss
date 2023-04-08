@@ -16,9 +16,9 @@
 }
 
 .about__text {
-  // z-index: 1;
-  // position: absolute;
-  // bottom: 0;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
   width: 100%;
@@ -27,5 +27,5 @@
   text-align: center;
   text-transform: uppercase;
   color: $mainWhiteColor;
-  background-color: $colorGradient;
+  background-color: $colorAccentOpacity;
 }
