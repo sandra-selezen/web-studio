@@ -1,6 +1,6 @@
 # WebStudio
 
-- Responsive **WebStudio** Website Using HTML, CSS And JavaScript
-- Developed with the mobile first methodology, then for desktop
+- Responsive website with **burger navigation menu** for mobile.
+- Used semantic markup and accessibility.
 
 ![preview](./images/preview.png)
