@@ -5,8 +5,8 @@ This project utilizes HTML, CSS, and SASS to create a stylish and responsive web
 
 ## Technologies Used:
 - HTML
-- CSS
-- SASS
+- CSS, SASS
+- JavaScript
 
 ## Features:
 
